@@ -3,4 +3,4 @@
 	url = https://github.com/rustgb/llvm-gbz80
 [submodule "rust"]
 	path = rust
-	url = https://github.com/rust-lang/rust
+	url = https://github.com/rustgb/rust
