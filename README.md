@@ -19,5 +19,7 @@ Documentation on how to compile.
     - `cd rust`
     - `./x.py setup`; you want to choose c
     - Add the following to the config.toml:
+    
         `[target.z80-gameboy]`
+
         `llvm-config = "/opt/z80llvm/bin/llvm-config"`
