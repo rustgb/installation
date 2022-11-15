@@ -8,8 +8,9 @@ Due to the size of these repos - LLVM is 2GB in size - I don't even bother to cl
 
 *This assumes Linux. It's not even tested on WSL, let alone bare Windows. Sorry.*
 
+- `git submodule update`
 - Install [sdcc](https://sdcc.sourceforge.net/); the .json file assumes you install it to a folder named `/opt/sdcc` and `/opt/sdcc/bin/sdldgb` is valid.
-- Clone [rustgb/llvm-gbz80](https://github.com/Bevinsky/llvm-gbz80)
+- **llvm-gbz80**
     - `cd llvm-gbz80/tools`
     - `ln -s ../../clang-gbz80 clang`
     - `cd ../`
@@ -17,7 +18,7 @@ Due to the size of these repos - LLVM is 2GB in size - I don't even bother to cl
     - `cd build`
     - `cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DLLVM_TARGETS_TO_BUILD="GBZ80" ..`
     - `make llc clang -j$(nproc)`
-- Clone [rust-lang](https://github.com/rust-lang/rust)
+- **rust-lang**
     - `cd rust`
     - `./x.py setup`; you want to choose c
     - Add the following to the config.toml:
