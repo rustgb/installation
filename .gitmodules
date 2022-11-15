@@ -1,0 +1,3 @@
+[submodule "llvm-gbz80"]
+	path = llvm-gbz80
+	url = https://github.com/rustgb/llvm-gbz80
