@@ -1,12 +1,10 @@
-# rust-z80
+# installation
 
-Libraries and documentation to get Rust to compile to a Gameboy rom.
-
-**Compilation instructions:**
+Documentation on how to compile.
 *This assumes Linux. It's not even tested on WSL, let alone bare Windows. Sorry.*
 
 - `git submodule update`
-- Install [sdcc](https://sdcc.sourceforge.net/); the .json file assumes you install it to a folder named `/opt/sdcc` and `/opt/sdcc/bin/sdldgb` is valid.
+- Install [sdcc](https://sdcc.sourceforge.net/); the source code assumes you install it to a folder named `/opt/sdcc`, and that `/opt/sdcc/bin/sdldgb` is valid.
 - **llvm-gbz80**
     - `cd llvm-gbz80/tools`
     - `ln -s ../../clang-gbz80 clang`
