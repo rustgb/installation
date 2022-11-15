@@ -2,10 +2,7 @@
 
 Libraries and documentation to get Rust to compile to a Gameboy rom.
 
-**Compilation instructions for clarity:**
-
-Due to the size of these repos - LLVM is 2GB in size - I don't even bother to clone them for what are pretty much minor, if any changes, hence a shell script (and these instructions) to compile this for you.
-
+**Compilation instructions:**
 *This assumes Linux. It's not even tested on WSL, let alone bare Windows. Sorry.*
 
 - `git submodule update`
@@ -18,6 +15,8 @@ Due to the size of these repos - LLVM is 2GB in size - I don't even bother to cl
     - `cd build`
     - `cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DLLVM_TARGETS_TO_BUILD="GBZ80" ..`
     - `make llc clang -j$(nproc)`
+    - `mkdir /opt/z80llvm`
+    - `cp bin docs include lib /opt/z80llvm -r`
 - **rust-lang**
     - `cd rust`
     - `./x.py setup`; you want to choose c
